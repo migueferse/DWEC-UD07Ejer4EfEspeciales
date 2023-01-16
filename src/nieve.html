@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nieve</title>
+  <script>
+    const BASE_CSS = `
+        body {
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            overflow-x: hidden;
+            min-height: 100vh; 
+            /* If you want to change the site height you can remove overflow-y */
+            /* pure-snow will automatically detect height of body tag */
+            overflow-y: hidden;
+            color: white;
+        }
+        
+        .snowflake {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 10px white);
+        }
+    `
+  </script>
+  <style>
+    #inicio{
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 250px;
+      width: 200px;
+      height: 200px;
+}
+  </style>
+</head>
+<body>
+  <h1>Nieve</h1>
+  <button id="inicio" type="button" >Ir a inicio</button>
+  <div id="snow" count="400"></div>
+</body>
+</html>
